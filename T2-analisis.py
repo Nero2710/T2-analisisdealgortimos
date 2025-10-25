@@ -6,7 +6,7 @@ def generar_matriz(filas, columnas):
         for j in range(columnas):
             palabra = input(f"Palabra en posición ({i+1},{j+1}): ").lower()
             while len(palabra) != 4 or not palabra.isalpha():
-                print("❌ Error: la palabra debe tener exactamente 4 letras (solo letras).")
+                print(" Error: la palabra debe tener exactamente 4 letras (solo letras).")
                 palabra = input(f"Palabra en posición ({i+1},{j+1}): ").lower()
             fila.append(palabra)
         matriz.append(fila)
@@ -72,7 +72,7 @@ def main():
     mostrar_matriz(matriz)
 
     total = contar_palabras_con_vocal(matriz)
-    print(f"🔡 Cantidad de palabras que tienen al menos una vocal: {total}")
+    print(f" Cantidad de palabras que tienen al menos una vocal: {total}")
 
 # Ejecutar
 if __name__ == "__main__":
